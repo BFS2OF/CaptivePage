@@ -1,0 +1,31 @@
+@import "@/styles/colors"
+
+.answer
+  display: flex
+  justify-content: center
+  align-items: center
+  text-align: center
+  padding: 0.2rem
+  height: 7rem
+  border-radius: 1rem
+  cursor: pointer
+  color: $background
+
+  h1
+    font-size: 19pt
+
+.answers .answer:nth-child(1)
+  background-color: $first
+  box-shadow: 0 0 0.5rem $first
+
+.answers .answer:nth-child(2)
+  background-color: $second
+  box-shadow: 0 0 0.5rem $second
+
+.answers .answer:nth-child(3)
+  background-color: $third
+  box-shadow: 0 0 0.5rem $third
+
+.answers .answer:nth-child(4)
+  background-color: $fourth
+  box-shadow: 0 0 0.5rem $fourth
