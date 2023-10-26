@@ -1,0 +1,10 @@
+[
+  {
+    "question": "In welcher Stadt befinden wir uns?",
+    "answers": ["Aschaffenburg", "Miltenberg", "Würzburg", "Frankfurt"]
+  },
+  {
+    "question": "Was ist kein Bundesland?",
+    "answers": ["Holland", "Bayern", "Baden-Württemberg", "Sachsen"]
+  }
+]
