@@ -20,12 +20,6 @@ jobs:
       - name: Zip app
         run: zip -r app.zip dist
 
-  release:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-
       - name: Get commit hash
         id: commit-hash
         run: echo "::set-output name=commit-hash::$(git rev-parse --short HEAD)"
@@ -47,6 +41,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.RELEASE_SECRET }}
         with:
-            files: app.zip
-            tag_name: ${{ steps.commit-hash.outputs.commit-hash }}
-            name: app.zip
+          files: app.zip
+          tag_name: ${{ steps.commit-hash.outputs.commit-hash }}
+          name: Release ${{ steps.commit-hash.outputs.commit-hash }}
