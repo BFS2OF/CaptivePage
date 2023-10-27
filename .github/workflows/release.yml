@@ -30,7 +30,7 @@ jobs:
       - name: Create release
         uses: actions/create-release@v1
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.RELEASE_SECRET }}
         with:
           tag_name: ${{ steps.commit-hash.outputs.commit-hash }}
           release_name: Release ${{ steps.commit-hash.outputs.commit-hash }}
@@ -43,7 +43,7 @@ jobs:
       - name: Upload release assets
         uses: actions/upload-release-asset@v1
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.RELEASE_SECRET }}
         with:
           asset_path: dist/
           asset_name: app.zip
