@@ -5,7 +5,7 @@ import "./styles.sass";
 export const MainContent = ({question, rePickQuestion}) => {
 
     const authenticate = () => {
-        location.href = "/nodogsplash_auth?tok=" + document.getElementById("tok").value + "&redir=" + document.getElementById("redir").value;
+        location.href = "/nodogsplash_auth/?tok=" + document.getElementById("tok").value + "&redir=" + document.getElementById("redir").value;
     }
 
     const correctAnswer = question.answers[0];
