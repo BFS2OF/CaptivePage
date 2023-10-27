@@ -6,5 +6,33 @@
   {
     "question": "Was ist kein Bundesland?",
     "answers": ["Holland", "Bayern", "Baden-Württemberg", "Sachsen"]
+  },
+  {
+    "question": "Welche Berufsschule ist das?",
+    "answers": ["BS1", "BFS2", "BFZAB", "BVB"]
+  },
+  {
+    "question": "Was ist keine Frucht?",
+    "answers": ["Brot", "Apfel", "Ananas", "Mango"]
+  },
+  {
+    "question": "Was ist 77 + 33?",
+    "answers": ["110", "100", "120", "90"]
+  },
+  {
+    "question": "Wo befindet sich ein Auto-Lenkrad?",
+    "answers": ["Vorne Links", "Vorne Rechts", "Hinten Links", "Hinten Rechts"]
+  },
+  {
+    "question": "Welcher Feiertag ist am 31.12?",
+    "answers": ["Silvester", "Halloween","Weihnachten", "Ostern"]
+  },
+  {
+    "question": "Wie viele Reifen hat ein Auto?",
+    "answers": ["4", "3", "2", "1"]
+  },
+  {
+    "question": "Wie viele Tage hat ein Jahr?",
+    "answers": ["365", "120", "31", "14"]
   }
 ]
