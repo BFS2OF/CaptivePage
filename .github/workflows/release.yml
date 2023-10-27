@@ -43,11 +43,8 @@ jobs:
           draft: false
           prerelease: false
       - name: Upload release asset
-        uses: actions/upload-release-asset@v1
+        uses: softprops/action-gh-release@v1
+        with:
+          files: ./app.zip
         env:
           GITHUB_TOKEN: ${{ secrets.RELEASE_SECRET }}
-        with:
-          upload_url: ${{ steps.create-release.outputs.upload_url }}
-          asset_path: ./app.zip
-          asset_name: captive-${{ steps.commit-hash.outputs.commit-hash }}.zip
-          asset_content_type: application/zip
